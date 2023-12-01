@@ -1,0 +1,83 @@
+*****************************************************PROJECT DESCRIPTION*****************************************************************
+                                               [INTQEA23QE005-Identify New Bikes]
+                                                    
+                                                    
+                                                    
+Problem Statement :
+
+Display upcoming bikes details like , bike name, its price and expected launch date in India
+1. Manufacturer should be Honda.
+2. Bike price should be less than 4Lac
+(Suggested site: zigwheels )
+
+
+Detailed Description: Hackath Ideas
+
+1. Display "Upcoming" bikes details like bike name, price and expected launch date in India
+2. For manufacturer 'Honda'
+3. Bike price should be less than 4Lac.
+4. For Used cars in Chennai, extract all the popular models in a List; Display the same
+5. Try to 'Login' with google, give invalid account details & capture the error message
+
+
+
+Key Automation Scope : 
+
+Handling windows & frames
+Filling simple form, Capture warning message
+Extract menu items from frames & store in collections
+Navigating back to home page
+
+*******************************************************FILES DESCRIPTION**************************************************************
+
+
+
+1.src/main/java - There are four packages present in this folder.
+     ->Base:In this package we have Base.java is our main project file in which we Firstly invoke the selected browser and 
+          Open the zigwheels page (https://www.zigwheels.com/),reusable method for list & count and closing the browser
+     
+     ->UpcomingBikes:In this package there is a Bikes.java class which extends the Base in which we are doing operations on zigwheels like 
+                     Display "Upcoming" bikes details like bike name,price and expected launch date in India For manufacturer 'Honda'and Bike price should be less than 4Lac.
+     	
+     ->UsedCars: This package contains a ChennaiUsedCars.java class which contains the operations on zigwheels For Used cars in Chennai, 
+                 extract all the popular models in a List; Display the same
+                 
+     ->GoogleLogin : This package contains Loginfail.java class in which we have included all the actions performed related the google login page.
+     
+     
+2.src/test/java- There is one package in this folder.
+     ->Object_Package:This package contains Testing.java class which extends Base.java class in this all the methods are under testng annotations.
+     
+        
+3.Maven Dependencies: In this File we have all the directory on the local machine, where all the project artifacts are stored. when a Maven build is executed,
+                      Maven automatically downloads all the dependency jars into the local repository. Usually, this directory is named.
+
+
+4.ScreenShot:There is one image of loginfail
+
+5.Report:In this folder testreport.html,report.html,data.xslx is present.
+
+6.pom.xml: The pom.xml file contains information of project and configuration information for the maven to build the project such as dependencies,
+   build directory, source directory, test source directory, plugin, goals etc. Maven reads the pom.xml file, then executes the goal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
